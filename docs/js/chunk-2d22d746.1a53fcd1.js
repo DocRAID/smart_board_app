@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d22d746"],{f820:function(e,t,n){"use strict";n.r(t);var s=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},c=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[n("h1",[e._v("About page")]),n("a",{attrs:{href:"https://vuetifyjs.com/en/components/calendars/"}},[e._v(" https://vuetifyjs.com/en/components/calendars/")])])}],a={},r=a,o=n("2877"),u=Object(o["a"])(r,s,c,!1,null,null,null);t["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-2d22d746.1a53fcd1.js.map

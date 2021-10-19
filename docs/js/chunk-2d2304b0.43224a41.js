@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d2304b0"],{ec51:function(e,t,n){"use strict";n.r(t);var r=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},c=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",[n("iframe",{attrs:{width:"100%",height:"1200px",id:"meal",src:"http://school.gyo6.net/gbsw/203678/food",frameborder:"0"}})])}],o={},s=o,a=n("2877"),i=Object(a["a"])(s,r,c,!1,null,null,null);t["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-2d2304b0.43224a41.js.map
