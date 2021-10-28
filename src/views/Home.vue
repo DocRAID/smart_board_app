@@ -21,19 +21,7 @@
     class="mx-auto"
     max-width="400"
   >
-  <!-- 이미지 -->
-    <v-img
-      class="white--text align-end"
-      height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-    >
-    <!-- 타이틀 -->
-      <v-card-title>Top 10 Australian beaches</v-card-title>
-    </v-img>
-<!-- 날짜 -->
-    <v-card-subtitle class="pb-0">
-      Number 10
-    </v-card-subtitle>
+
 <!-- 본문 -->
     <v-card-text class="text--primary">
       <div>Whitehaven Beach</div>
