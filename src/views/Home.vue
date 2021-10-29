@@ -16,30 +16,40 @@
       <br>
       <br>
     </div>
-    <template>
-  <v-card
-    class="mx-auto"
-    max-width="400"
-  >
 
-<!-- 본문 -->
-    <v-card-text class="text--primary">
-      <div>Whitehaven Beach</div>
+    <ul id="news_card">
+      <li v-for="n in news" :key="n.title" >
+        <!--  -->
+        <template>
+        <v-card
+          class="mx-auto"
+          max-width="400"
+        >
 
-      <div>Whitsunday Island, Whitsunday Islands</div>
-    </v-card-text>
-<!-- 액션 -->
-    <v-card-actions>
-      <v-btn
-        color="orange"
-        text
-      >
-        Share
-      </v-btn>
+      <!-- 본문 -->
+          <v-card-text class="text--primary">
+            <div>{{n.title}}</div>
 
-    </v-card-actions>
-    </v-card>
-  </template>
+            <div>{{n.contents}}</div>
+          </v-card-text>
+      <!-- 액션 -->
+          <v-card-actions>
+            <v-btn
+              color="orange"
+              text
+              
+              link
+              :to="n.link"
+            >
+              더보기
+            </v-btn>
+
+          </v-card-actions>
+          </v-card>
+        </template>
+        <!--  -->
+      </li>
+    </ul>
 
   
 
@@ -47,7 +57,7 @@
 </template>
 <script>
  setInterval(function(){
-        const clock = document.querySelector(".display");
+   const clock = document.querySelector(".display");
         // 만약 이걸 안쓰면 리턴으로 돌아감
         if (!clock) return
 
@@ -76,9 +86,19 @@
         clock.textContent =day + " " + hr + ':' + min + ':' + sec ;
       });
 export default {
-  
+  name:'news_card',
+  data() {
+    return {
+      news: [
+        {title: 'title test', contents: 'contents test',link:''},
+
+      ]
+    }
 }
+}
+
 </script>
+
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
 

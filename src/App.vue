@@ -16,10 +16,10 @@
 
         <v-list-item-content>
           <v-list-item-title class="text-h6">
-            저는칠판입니다
+            전칠웹
           </v-list-item-title>
           <v-list-item-subtitle>
-            made by me
+            ver.1.0.1
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
