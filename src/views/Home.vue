@@ -18,21 +18,25 @@
     </div>
 
     <ul id="news_card">
-      <li v-for="n in news" :key="n.title" >
-        <!--  -->
+      <li id="news_card_division" 
+          v-for="n in news" :key="n.title" 
+          style="margin-bottom: 30px;" 
+      >
+         <!--  -->
         <template>
         <v-card
           class="mx-auto"
           max-width="400"
+          
         >
 
-      <!-- 본문 -->
+       <!-- 본문 -->
           <v-card-text class="text--primary">
             <div>{{n.title}}</div>
 
             <div>{{n.contents}}</div>
           </v-card-text>
-      <!-- 액션 -->
+       <!-- 액션 -->
           <v-card-actions>
             <v-btn
               color="orange"
@@ -90,7 +94,10 @@ export default {
   data() {
     return {
       news: [
+        
         {title: 'title test', contents: 'contents test',link:''},
+        
+
 
       ]
     }
@@ -101,7 +108,9 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
-
+ul{
+   list-style:none;
+   }
 body{
   
   place-items: center;
@@ -121,5 +130,9 @@ body{
   color: #000;
   letter-spacing: 5px;
   font-family: 'Hind Siliguri', sans-serif;
+}
+.news_card_division {
+  margin-bottom: 30px;
+  
 }
 </style>
