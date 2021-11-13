@@ -26,7 +26,7 @@
         <template>
         <v-card
           class="mx-auto"
-          max-width="400"
+          max-width="450"
           
         >
 
@@ -54,9 +54,6 @@
         <!--  -->
       </li>
     </ul>
-
-  
-
   </div>
 </template>
 <script>

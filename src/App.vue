@@ -86,19 +86,7 @@
     </v-menu>
 
        <strong>GBSW</strong> - {{ new Date().getFullYear() }} 
-      <!-- <v-tabs
-          v-model="model"
-          centered
-          slider-color="primary"
-        >
-          <v-tab
-            v-for="i in 3"
-            :key="i"
-            :href="`#tab-${i}`"
-          >
-            Item {{ i }}
-          </v-tab>
-        </v-tabs> -->
+      
     </v-col>
   </v-footer>
 
