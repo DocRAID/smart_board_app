@@ -26,13 +26,13 @@
         <template>
         <v-card
           class="mx-auto"
-          max-width="450"
+          max-width="300"
           
         >
 
        <!-- 본문 -->
           <v-card-text class="text--primary">
-            <div>{{n.title}}</div>
+            <h3>{{n.title}}</h3>
 
             <div>{{n.contents}}</div>
           </v-card-text>
@@ -86,17 +86,15 @@
         
         clock.textContent =day + " " + hr + ':' + min + ':' + sec ;
       });
+      //경로상의 뉴스 정보를 임포트 한다.
+      import newsdata from '../assets/news';
+
 export default {
   name:'news_card',
   data() {
     return {
-      news: [
-        
-        {title: 'title test', contents: 'contents test',link:''},
-        
-
-
-      ]
+      //임포트한 정보를 리턴하여 표시한다.
+      news : newsdata,
     }
 }
 }
