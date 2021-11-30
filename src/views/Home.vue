@@ -17,8 +17,8 @@
       <br>
     </div>
 
-    <ul id="news_card">
-      <li id="news_card_division" 
+    <ul id="news_card" style="padding-left: 0px;">
+      <li 
           v-for="n in news" :key="n.title" 
           style="margin-bottom: 30px;" 
       >
@@ -26,8 +26,8 @@
         <template>
         <v-card
           class="mx-auto"
-          max-width="300"
-          
+          max-width="400"
+          id="cardStyle"
         >
 
        <!-- 본문 -->
@@ -39,11 +39,11 @@
        <!-- 액션 -->
           <v-card-actions>
             <v-btn
-              color="orange"
+              color="blue"
               text
-              
               link
               :to="n.link"
+              v-if="n.link!='null'"
             >
               더보기
             </v-btn>
@@ -111,6 +111,9 @@ body{
   place-items: center;
   
 }
+.news_card{
+  padding: 0;
+}
 .clock{
  
   height: 120px;
@@ -126,8 +129,7 @@ body{
   letter-spacing: 5px;
   font-family: 'Hind Siliguri', sans-serif;
 }
-.news_card_division {
-  margin-bottom: 30px;
-  
+#cardStyle{
+  border: 1px solid #000;
 }
 </style>
