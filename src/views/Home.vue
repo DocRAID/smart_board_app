@@ -42,7 +42,8 @@
               color="blue"
               text
               link
-              :to="n.link"
+              target="_blank"
+              :href="n.link"
               v-if="n.link!='null'"
             >
               더보기
